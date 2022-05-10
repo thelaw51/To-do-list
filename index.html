@@ -1,5 +1,3 @@
-<!-- Redo the order your making the website start with the todo list functionality and do the design and formatting last -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,12 +13,21 @@
         <h1 id="Heading-Text">TO-DO LIST</h1>
       </div>
       <ul class="TodoListItems">
-        <li>Vacuum</li>
-        <li>Learn More Code</li>
-        <li>Build To-Do List Project</li>
-        <li>Netflix</li>
-        <li>Chill</li>
+        <li id="ListItem1">Vacuum</li>
+        <li id="ListItem2">Learn More Code</li>
+        <li id="ListItem3">Build To-Do List Project</li>
+        <li id="ListItem4">Netflix</li>
+        <li id="ListItem5">Chill</li>
       </ul>
+      <input
+        type="number"
+        id="PriorityInput"
+        placeholder="Priority 1-5"
+        max="5"
+      />
+      <input type="text" id="ToDoItemInput" placeholder="To-Do Item" />
+      <button id="addToDoItem" onclick="addToDoItem()">add To-Do Item</button>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
