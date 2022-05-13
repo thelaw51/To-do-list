@@ -32,3 +32,30 @@ function removeToDoItem1() {
     document.getElementById("To-do5").textContent;
   document.getElementById("To-do5").textContent = "To-Do item";
 }
+
+function removeToDoItem2() {
+  document.getElementById("To-do2").textContent =
+    document.getElementById("To-do3").textContent;
+  document.getElementById("To-do3").textContent =
+    document.getElementById("To-do4").textContent;
+  document.getElementById("To-do4").textContent =
+    document.getElementById("To-do5").textContent;
+  document.getElementById("To-do5").textContent = "To-Do item";
+}
+
+function removeToDoItem3() {
+  document.getElementById("To-do3").textContent =
+    document.getElementById("To-do4").textContent;
+  document.getElementById("To-do4").textContent =
+    document.getElementById("To-do5").textContent;
+  document.getElementById("To-do5").textContent = "To-Do item";
+}
+
+function removeToDoItem4() {
+  document.getElementById("To-do4").textContent =
+    document.getElementById("To-do5").textContent;
+  document.getElementById("To-do5").textContent = "To-Do item";
+}
+function removeToDoItem5() {
+  document.getElementById("To-do5").textContent = "To-Do item";
+}
