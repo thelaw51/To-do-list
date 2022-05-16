@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #d8dee9;
 }
 #To-do1Text,
 #To-do2Text,
@@ -11,6 +13,12 @@
 #To-do5Text {
   display: inline-block;
   padding-right: 10px;
+}
+
+.RemoveButton {
+  background-color: #3b4252;
+  border-radius: 10px;
+  border: none;
 }
 
 #To-do1,
@@ -28,4 +36,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#PriorityInput {
+  margin-right: 10px;
+  background-color: #3b4252;
+  border-radius: 10px;
+  border: none;
+}
+#ToDoItemInput {
+  margin-right: 10px;
+  background-color: #3b4252;
+  border-radius: 10px;
+  border: none;
+}
+#TodoListScreen {
+  background-color: #4c566a;
+  margin: auto;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+#addToDoItem {
+  background-color: #3b4252;
+  border-radius: 10px;
+  border: none;
 }
