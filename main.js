@@ -4,18 +4,23 @@ function addToDoItem() {
   switch (Priority) {
     case "1":
       document.getElementById("To-do1Text").textContent = newItem;
+      document.getElementById("To-do1Text").style.display = "inline-block"
       break;
     case "2":
       document.getElementById("To-do2Text").textContent = newItem;
+      document.getElementById("To-do2Text").style.display = "inline-block"
       break;
     case "3":
       document.getElementById("To-do3Text").textContent = newItem;
+      document.getElementById("To-do3Text").style.display = "inline-block"
       break;
     case "4":
       document.getElementById("To-do4Text").textContent = newItem;
+      document.getElementById("To-do4Text").style.display = "inline-block"
       break;
     case "5":
       document.getElementById("To-do5Text").textContent = newItem;
+      document.getElementById("To-do5Text").style.display = "inline-block"
       break;
     default:
       console.log("error incorrect value entered");

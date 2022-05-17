@@ -11,14 +11,16 @@
 #To-do3Text,
 #To-do4Text,
 #To-do5Text {
-  display: inline-block;
+  display: none;
   padding-right: 10px;
+
 }
 
 .RemoveButton {
   background-color: #3b4252;
   border-radius: 10px;
   border: none;
+  display: none;
 }
 
 #To-do1,
