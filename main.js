@@ -1,30 +1,16 @@
 function addToDoItem() {
-  const newItem = document.getElementById("ToDoItemInput").value;
-  const Priority = document.getElementById("PriorityInput").value;
-  switch (Priority) {
-    case "1":
-      document.getElementById("To-do1Text").textContent = newItem;
-      document.getElementById("To-do1Text").style.display = "inline-block"
-      break;
-    case "2":
-      document.getElementById("To-do2Text").textContent = newItem;
-      document.getElementById("To-do2Text").style.display = "inline-block"
-      break;
-    case "3":
-      document.getElementById("To-do3Text").textContent = newItem;
-      document.getElementById("To-do3Text").style.display = "inline-block"
-      break;
-    case "4":
-      document.getElementById("To-do4Text").textContent = newItem;
-      document.getElementById("To-do4Text").style.display = "inline-block"
-      break;
-    case "5":
-      document.getElementById("To-do5Text").textContent = newItem;
-      document.getElementById("To-do5Text").style.display = "inline-block"
-      break;
-    default:
-      console.log("error incorrect value entered");
-  }
+  var ul = document.getElementById("To-doList");
+  var newItem = document.getElementById("ToDoItemInput");
+  var li = document.createElement("li");
+  li.setAttribute("id", newItem.value);
+  li.appendChild(document.createTextNode(newItem.value));
+  ul.appendChild(li);
+}
+function removeItem(){
+  var ul = document.getElementById("To-doList");
+  var removeItem = document.getElementById("ToDoItemInput");
+  var li = document.getElementById(removeItem.value);
+  ul.removeChild(li);
 }
 
 var input = document.getElementById("ToDoItemInput");
@@ -36,41 +22,4 @@ input.addEventListener("keypress", function (event) {
   }
 });
 
-function removeToDoItem1() {
-  document.getElementById("To-do1Text").textContent =
-    document.getElementById("To-do2Text").textContent;
-  document.getElementById("To-do2Text").textContent =
-    document.getElementById("To-do3Text").textContent;
-  document.getElementById("To-do3Text").textContent =
-    document.getElementById("To-do4Text").textContent;
-  document.getElementById("To-do4Text").textContent =
-    document.getElementById("To-do5Text").textContent;
-  document.getElementById("To-do5Text").textContent = "To-Do item";
-}
 
-function removeToDoItem2() {
-  document.getElementById("To-do2Text").textContent =
-    document.getElementById("To-do3Text").textContent;
-  document.getElementById("To-do3Text").textContent =
-    document.getElementById("To-do4Text").textContent;
-  document.getElementById("To-do4Text").textContent =
-    document.getElementById("To-do5Text").textContent;
-  document.getElementById("To-do5Text").textContent = "To-Do item";
-}
-
-function removeToDoItem3() {
-  document.getElementById("To-do3Text").textContent =
-    document.getElementById("To-do4Text").textContent;
-  document.getElementById("To-do4Text").textContent =
-    document.getElementById("To-do5Text").textContent;
-  document.getElementById("To-do5Text").textContent = "To-Do item";
-}
-
-function removeToDoItem4() {
-  document.getElementById("To-do4Text").textContent =
-    document.getElementById("To-do5Text").textContent;
-  document.getElementById("To-do5Text").textContent = "To-Do item";
-}
-function removeToDoItem5() {
-  document.getElementById("To-do5Text").textContent = "To-Do item";
-}

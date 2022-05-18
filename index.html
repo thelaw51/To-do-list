@@ -13,52 +13,17 @@
         <h1 id="Heading-Text">TO-DO LIST</h1>
       </div>
       <div id="To-doListItems">
-        <div id="To-do1">
-          <p id="To-do1Text">To-Do item</p>
-          <button class="RemoveButton" onclick="removeToDoItem1()">
-            remove
-          </button>
-        </div>
-        <div id="To-do2">
-          <p id="To-do2Text">To-Do item</p>
-          <button class="RemoveButton" onclick="removeToDoItem2()">
-            remove
-          </button>
-        </div>
-        <div id="To-do3">
-          <p id="To-do3Text">To-Do item</p>
-          <button class="RemoveButton" onclick="removeToDoItem3()">
-            remove
-          </button>
-        </div>
-        <div id="To-do4">
-          <p id="To-do4Text">To-Do item</p>
-          <button class="RemoveButton" onclick="removeToDoItem4()">
-            remove
-          </button>
-        </div>
-        <div id="To-do5">
-          <p id="To-do5Text">To-Do item</p>
-          <button class="RemoveButton" onclick="removeToDoItem5()">
-            remove
-          </button>
+        <ul id="To-doList"></ul>
         </div>
       </div>
-      <div id="To-doInput">
-        <input
-          type="number"
-          id="PriorityInput"
-          placeholder="Priority 1-5"
-          max="5"
-        />
         <input
           type="text"
           id="ToDoItemInput"
           placeholder="To-Do Item"
           maxlength="23"
         />
-        <button id="addToDoItem" onclick="addToDoItem()">add To-Do Item</button>
-      </div>
+        <button id="addToDoItem" onclick="addToDoItem()">add Item</button>
+        <button onclick="removeItem()"> Remove Item</button>
     </div>
     <script src="main.js"></script>
   </body>
