@@ -6,7 +6,7 @@ function addToDoItem() {
   li.appendChild(document.createTextNode(newItem.value));
   ul.appendChild(li);
 }
-function removeItem(){
+function removeItem() {
   var ul = document.getElementById("To-doList");
   var removeItem = document.getElementById("ToDoItemInput");
   var li = document.getElementById(removeItem.value);
@@ -21,5 +21,3 @@ input.addEventListener("keypress", function (event) {
     document.getElementById("addToDoItem").click();
   }
 });
-
-

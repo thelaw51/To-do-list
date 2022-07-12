@@ -4,33 +4,4 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
-  color: #d8dee9;
 }
-
-
-.RemoveButton {
-  background-color: #3b4252;
-  border-radius: 10px;
-  border: none;
-  display: none;
-}
-#To-doList{
-  list-style-type: none;
-
-}
-
-#Heading-Text {
-  text-align: center;
-}
-
-#TodoListScreen {
-  background-color: #4c566a;
-  margin: auto;
-  width: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-}
-
