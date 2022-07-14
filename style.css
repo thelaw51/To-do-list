@@ -3,10 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
 }
-#ListItem1 {
-  position: relative;
+#TodoListScreen {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-#ListItem1Btn {
-  position: relative;
+#Heading-Text {
 }

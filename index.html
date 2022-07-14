@@ -13,25 +13,16 @@
         <h1 id="Heading-Text">TO-DO LIST</h1>
       </div>
       <div id="To-doListItems">
-        <p id="To-do1">Vacuum</p>
-        <button class="RemoveButton" onclick="removeToDoItem1()">remove</button>
-        <p id="To-do2">Learn more code</p>
-        <button class="RemoveButton" onclick="removeToDoItem2()">remove</button>
-        <p id="To-do3">Build To-do list project</p>
-        <button class="RemoveButton" onclick="removeToDoItem3()">remove</button>
-        <p id="To-do4">Netflix</p>
-        <button class="RemoveButton" onclick="removeToDoItem4()">remove</button>
-        <p id="To-do5">Chill</p>
-        <button class="RemoveButton" onclick="removeToDoItem5()">remove</button>
+        <ul id="To-doList"></ul>
       </div>
       <input
-        type="number"
-        id="PriorityInput"
-        placeholder="Priority 1-5"
-        max="5"
+        type="text"
+        id="ToDoItemInput"
+        placeholder="To-Do Item"
+        maxlength="23"
       />
-      <input type="text" id="ToDoItemInput" placeholder="To-Do Item" />
-      <button id="addToDoItem" onclick="addToDoItem()">add To-Do Item</button>
+      <button id="addToDoItem" onclick="addToDoItem()">add Item</button>
+      <button onclick="removeItem()">Remove Item</button>
     </div>
     <script src="main.js"></script>
   </body>
